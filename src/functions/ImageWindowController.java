@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package functions;
 
 import java.net.URL;
@@ -13,26 +14,25 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 /**
- * FXML Controller class
+ * FXML Controller class.
  *
  * @author Administrator
  */
 public class ImageWindowController implements Initializable {
-
+    
     @FXML
-    private ImageView LargerImage;
-
+    private ImageView largerImage;
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    } 
+    }
     
-   public void SetImage(Image img)//设置图片
-   {
-       LargerImage.setImage(img);
-   }
+    public void SetImage(Image img) {
+        largerImage.setImage(img);
+    }
     
 }
