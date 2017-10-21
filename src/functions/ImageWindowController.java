@@ -19,20 +19,20 @@ import javafx.scene.image.ImageView;
  * @author Administrator
  */
 public class ImageWindowController implements Initializable {
-    
-    @FXML
-    private ImageView largerImage;
-    
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
-    
-    public void SetImage(Image img) {
-        largerImage.setImage(img);
-    }
-    
+
+  @FXML
+  private ImageView largerImage;
+
+  /**
+   * Initializes the controller class.
+   */
+  @Override
+  public void initialize(URL url, ResourceBundle rb) {
+    // TODO
+  }
+
+  public void SetImage(Image img) {
+    largerImage.setImage(img);
+  }
+
 }

@@ -19,22 +19,23 @@ import javafx.stage.StageStyle;
  * @author Administrator
  */
 public class Main extends Application {
-    
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Lab1Gui.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
-        stage.show();
-    }
-    /**
-     * @param args the command line arguments
-     */
-    
-    //主程序入口，接受用户输入文件，生成图，并允许用户选择后续各项功能
-    public static void main(String[] args){
-        launch(args);
-    }
-    
+
+  @Override
+  public void start(Stage stage) throws Exception {
+    Parent root = FXMLLoader.load(getClass().getResource("Lab1Gui.fxml"));
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+    stage.initStyle(StageStyle.UNDECORATED);
+    stage.show();
+  }
+  /**
+   * @param args
+   *          the command line arguments
+   */
+
+  // 主程序入口，接受用户输入文件，生成图，并允许用户选择后续各项功能
+  public static void main(String[] args) {
+    launch(args);
+  }
+
 }
