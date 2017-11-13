@@ -146,16 +146,16 @@ public class Lab1GuiController implements Initializable {
     return graph.PrintBridgeWords(word1, word2);
   }
   // 根据bridge word生成新文本
-  public String generateNewText(String inputText) {
+  /*public String generateNewText(String inputText) {
     return graph.getNewString(inputText);
-  }
+  }*/
   // 计算两个单词之间的最短路径
   public String calcShorttestPath(String word1, String word2)
       throws IOException {
     if (word2.isEmpty())
-      return graph.Dijistra(word1);
+      return graph.calcShortestPath(word1);
     else
-      return graph.Dijistra(word1, word2);
+      return graph.calcShortestPath(word1, word2);
   }
 
   public String randomWalk() throws InterruptedException, IOException// 随机游走
@@ -542,7 +542,7 @@ public class Lab1GuiController implements Initializable {
     bottomImage.setImage(initialImage);
     String inputString = inputStringArea.getText().toLowerCase();
     if (!inputString.isEmpty()) {
-      String outcome = generateNewText(inputString);
+      String outcome = "";//generateNewText(inputString);
       outputStringArea.setText(outcome);
     }
   }

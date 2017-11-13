@@ -1,0 +1,11 @@
+digraph gra{
+"a" [ color = blue ] 
+"b"
+"c" [ color = blue ] 
+"d" [ color = green ] 
+"a" -> "b" [ label = 1 ] 
+"a" -> "c" [ label = 1 ] 
+"b" -> "c" [ label = 1 ] 
+"c" -> "d" [ label = 2 , color = green  ] 
+"d" -> "a" [ label = 1 , color = green  ] 
+}
